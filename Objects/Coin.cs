@@ -18,11 +18,20 @@ namespace CoinCombo
         coinResult.Add(quarter);
       }
 
-      string dime = ((centsInt - 25 * quarterInt) / 10).ToString() + " Dime";
+      int dimeInt = (centsInt - 25 * quarterInt) / 10;
+      string dime = dimeInt.ToString() + " Dime";
 
-      if(quarterInt > 0)
+      if(dimeInt > 0)
       {
         coinResult.Add(dime);
+      }
+
+      int nickelInt = (centsInt - 25 * quarterInt - 10 * dimeInt) / 5;
+      string nickel = nickelInt.ToString() + " Nickel";
+
+      if(nickelInt > 0)
+      {
+        coinResult.Add(nickel);
       }
 
       return coinResult;
