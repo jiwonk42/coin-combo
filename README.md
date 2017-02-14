@@ -1,8 +1,8 @@
 # Specification
 
-#### Program returns a message to enter the amount of cents when the user inputs a number that is less than or equal to 0.
-* Input: 0
-* Output: "Please enter the amount of cents."
+#### Program returns whatever amount of cents the user inputs.
+* Input: "1"
+* Output: "1"
 
 #### Program returns a penny when the user inputs 1 cent.
 * Input: "1"

@@ -6,6 +6,9 @@ namespace CoinCombo
 {
   public class Coin
   {
-
+    public string Coins(string cents)
+    {
+      return cents;
+    }
   }
 }
