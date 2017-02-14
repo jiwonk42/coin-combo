@@ -7,16 +7,21 @@ namespace CoinCombo
   public class CointTest
   {
     [Fact]
-    public void CoinComboTest_ForUserInputs1_1()
+    public void CoinComboTest_ForUserInputs25_1Q()
     {
       Coin testCoin = new Coin();
-      Assert.Equal("1", testCoin.Coins("1"));
+      List<string> expected = new List<string>{};
+      expected.Add("1 Quarter");
+      Assert.Equal(expected, testCoin.Coins("25"));
     }
+
     [Fact]
-    public void CoinComboTest_ForUserInputs1_return1penny()
+    public void CoinComboTest_ForUserInputs35_1Q1D()
     {
       Coin testCoin = new Coin();
-      Assert.Equal("1 penny", testCoins("1"));
+      List<string> expected = new List<string>{};
+      expected.Add("1 Quarter 1 Dime");
+      Assert.Equal(expected, testCoin.Coins("35"));
     }
   }
 }
