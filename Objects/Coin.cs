@@ -34,6 +34,14 @@ namespace CoinCombo
         coinResult.Add(nickel);
       }
 
+      int pennyInt = centsInt - 25 * quarterInt - 10 * dimeInt - 5 * nickelInt;
+      string penny = pennyInt.ToString() + " Penny";
+
+      if(pennyInt > 0)
+      {
+        coinResult.Add(penny);
+      }
+
       return coinResult;
     }
   }

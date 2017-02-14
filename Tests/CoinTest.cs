@@ -29,5 +29,13 @@ namespace CoinCombo
       List<string> expected = new List<string>{"1 Quarter", "1 Dime", "1 Nickel"};
       Assert.Equal(expected, testCoin.Coins("40"));
     }
+
+    [Fact]
+    public void CoinComboTest_ForUserInputs41_1Q1D1N1P()
+    {
+      Coin testCoin = new Coin();
+      List<string> expected = new List<string>{"1 Quarter", "1 Dime", "1 Nickel", "1 Penny"};
+      Assert.Equal(expected, testCoin.Coins("41"));
+    }
   }
 }
